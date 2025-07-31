@@ -1,1 +1,53 @@
+body { 
+    font-family: Arial, sans-serif; /*fuente del texto*/
+    line-height: 1.6; /*espaciado entre líneas*/
+    background-color: #71add3; /*fondo del titulo*/
+
+}
+h1, h2, h3 {
+    color: #373535; /*color del texto de los titulos*/
+    font-weight: bold; /*negrita en los titulos*/
+}
+h1 {
+    text-align: center; /*centrar el titulo principal*/
+    font-size: 2.9em; /*tamaño del titulo principal*/
+    color: #1c0890; /*color del titulo principal*/
+}
+h2 {
+    margin-top: 20px; /*margen superior en el titulo secundario*/
+    text-align: center; /*centrar los titulos secundarios*/
+}
+h3 {
+    margin-top: 15px; /*margen superior en los titulos terciarios*/
+    text-align: center; /*centrar los titulos terciarios*/
+    color: #0c047b; /*color de los titulos terciarios*/
+}
+.contenido {
+    max-width: 800px; /*ancho máximo del contenido*/
+    margin: 0 auto; /*centrar el contenido*/
+    padding: 20px; /*espaciado interno en el contenido*/
+    background-color: #d9d6d6; /*fondo del contenido*/
+    border-radius: 8px; /*bordes redondeados en el contenido*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*sombra en el contenido*/
+}
+img {
+    display: block;
+    margin: 0 auto 20px; /*centrar las imagenes*/
+    border-radius: 8px; /*bordes redondeados en las imagenes*/
+}   
+p {
+    line-height: 1.6; /*espaciado entre líneas en los parragos*/
+    color: #080808; /*color del texto de los parrafos y letras*/
+    text-align: center; /*centar Descubre el diseño deportivo.....*/ 
+}
+ul {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    color: #ca1f1a;
+    font-size: 1.9em;
+}
+
+
 

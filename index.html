@@ -1,47 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Tu Título</title>
-  <title>HGFITYDKHF,JGK</title>
-<body>
-  <h1>FORD PERÚ</h1>
-
-  <h2>Sobre nosotros</h2>
-  <pre>En Ford, llevamos más de un siglo impulsando el mundo con innovación, calidad y pasión por la movilidad. Desde que Henry Ford fundó la compañía en 1903, hemos sido pioneros en la industria automotriz, revolucionando la forma en que las personas se mueven y viven.</pre>
-
-  <h3>ELIGE TU FORD 0 km PARA TU ESTILO DE VIDA</h3>
-  <img src="c:\Users\pauca\Pictures\Screenshots\ford.png" width="400" height="200">
-
-  
-  <h2>MAS DE FORD PARA TI</h2>
-  <p>aqui encontrarás más acceso para conocer el mundo Ford</p>
-  <img src="c:\Users\pauca\Pictures\Screenshots\1.png"><img src="c:\Users\pauca\Pictures\Screenshots\2.png"width="300" height="275">
-
-  <h2>TIPOS DE FORD</h2>
-  <h3>SUV</h3>
-  <img src="c:\Users\pauca\Downloads\12.jpg" width="300" height="200">
-  <button>SELECCIONAR</button>
-
-  <h3>Pick-ups</h3>
-  <img src="c:\Users\pauca\Downloads\37.jpg" width="500" height="200">
-  <button>SELECCIONAR</button>
-
-  <h3>sedanes y hatchbacks</h3>
-  <img src="c:\Users\pauca\Downloads\R.png" width="400" height="300">
-  <button>SELECCIONAR</button>
-
-  <h3>Deportivo</h3>
-  <img src="c:\Users\pauca\Downloads\R (1).png" width="400" height="200">
-  <button>SELECCIONAR</button>
-  
-  <h2>ELIGE TU MODELO</h2>
-  <select name="nombre_del_campo" id="id_del_campo">
-    <option value="valor1">SUV</option>
-    <option value="valor2">Pick-ups</option>
-    <option value="valor3">sedanes y hatchbacks</option>
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fordperú.com.pe</title> <!-- la url-->
+  <link rel="stylesheet" href="style.css"> 
 </head>
+
+<body>
+  <header>
+    <h1>FORD PERÚ</h1> <!--titulo o marca--> 
+   <img src="imagen/ford.png" width="400" height="200" >
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">Sobre nosotros</a></li>  <!--sub titulos-->
+        <li><a href="#">Referencia del vehículo</a></li>  <!--sub titulos-->
+        <li><a href="#">Acerca de</a></li>  <!--sub titulos-->
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>El sueño soñado: el FORD MUSTANG</h2> <!--sub titulo-->
+    <p>Descubre el diseño deportivo y elegante, siente su motor V8 supercargado en tus manos. "La calidad es hacer las cosas bien incluso cuando nadie está mirando." – FORD</p>
+    <button>Descubre más de nosotros</button> <!--botones-->
+    <button>¿Quién fue Ford?</button> <!--botones-->
+  </section>
+
+  <section class="contenido">
+
+    <h2>MÁS DE FORD PARA TI</h2>
+    <h3>Mustang 2024 para ti</h3> <!--sub titulo-->
+    <img src="imagen/11.png" alt="Mustang 2024" width="300" height="350">
+    <p>El Ford Mustang 2024 presenta una serie de novedades como el motor Coyote 5.0L, suspensión renovada y chasis más rígido para un desempeño superior.</p>
+
+    <h3>Estilo de manejo</h3> <!--sub titulo-->
+    <img src="imagen/2.png" alt="Estilo de manejo" width="300" height="200">
+    <p>Modelos Ford 2024 con potencia, suspensión inteligente, modos de manejo y asistencia de conducción avanzada.</p>
+
+    <h3>Performance</h3> <!--sub titulo-->
+    <img src="imagen/image.png" alt="Performance Ford" width="350" height="300">
+    <p>Ford 2024 redefine el rendimiento con motores potentes y tecnología inteligente.</p>
+
+    <h2>La visión de un diseñador sobre el diseño de Ford</h2>
+    <h3>Poder y estilo cautivadores: el Mustang® 2024</h3>
+    <p>El Mustang® 2024 es un ícono moderno con motor de alto desempeño, tecnología avanzada y diseño audaz.</p>
+  </section>
+  
+  <h3>SOLO POR HOY!!!!!!!!!</h3>
+  <h2>te hacemos un descuento del 6% en tu primer carro</h2>
+
+  <footer>
+    <h4>Comunícate con nosotros</h4>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo electrónico</th>
+        <th>Mensaje</th>
+      </tr>
+      <tr>
+        <td><input type="text" name="nombre"></td> <!--capmos -->
+        <td><input type="email" name="correo"></td>
+        <td><textarea name="mensaje" rows="3" cols="25"></textarea></td>
+      </tr>
+    </table>
+  </footer>
 </body>
-    </html>
+</html>
