@@ -1,85 +1,221 @@
-body { 
-    font-family: Arial, sans-serif; /*fuente del texto*/
-    line-height: 1.6; /*espaciado entre líneas*/
-    background-color: #090909; /*fondo del titulo*/
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* FUENTE Y FONDO */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Fuente principal */
+  background-color: #141414; /* Fondo oscuro */
+  color: #ffffff; /* Color del texto */
+  line-height: 1.6; /* Espaciado entre líneas */
 }
+
+/* NAVBAR */
 nav {
-    background-color: #000000; /*fondo del menu*/
-    padding: 5px; /*espaciado interno en el menu*/
-    text-align:end; /*alinear el texto del menu a la derecha*/
-    
+  display: flex;
+  justify-content: space-between; /* Espacio entre logo y enlaces */
+  align-items: center;  /* Alineación vertical */
+  background-color: #060606; /* Fondo de la barra de navegación */
+  padding: 1rem 2rem; /* Espaciado interno */
+  border-bottom: 2px solid #184c9b; /* Línea inferior azul */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
-nav ul {
-    list-style: none; /*quitar puntos de la lista*/
-    padding: 0; /*quitar padding*/
-    margin: 0; /*quitar margen*/
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-nav ul li {
-    display: inline; /*mostrar los elementos en linea*/
-    margin: 015px; /*margen entre los elementos del menu*/
+
+.logo-container img {
+  width: 200px; /*logo*/
+  height: 100px; /*logo*/
 }
-h1, h2, h3 {
-    color: #a79a9a; /*color del texto de los titulos*/
-    font-weight: bold; /*negrita en los titulos*/
+
+.nav_links {
+  list-style: none; 
+  display: flex;
+  gap: 20px;
 }
-h1 {
-  text-align: left;         /* Alineado a la izquierda */
-  font-size: 2.4em;         /* Tamaño más grande y legible */
-  color: #f1e9e9;              /* Color más contrastante */
-  margin: 0 20px;           /* Espacio a los lados */
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+
+.nav_links a {
+  color: #e6ebf2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav_links a:hover {
+  color: #2795bd;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #0a0a0a;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* SECCIONES */
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h3 {
+  color: #d9dbdd;
+  margin-bottom: 2rem;
+  font-size: 34px;
 }
 h2 {
-    margin-top: 20px; /*margen superior en el titulo secundario*/
-    text-align: center; /*centrar los titulos secundarios*/
+  color: #ffffff;
+  margin-bottom: 2rem;
 }
-h3 {
-    margin-top: 15px; /*margen superior en los titulos terciarios*/
-    text-align: center; /*centrar los titulos terciarios*/
-    color: #0c047b; /*color de los titulos terciarios*/
-}
+
 .contenido {
-    max-width: 800px; /*ancho máximo del contenido*/
-    margin: 0 auto; /*centrar el contenido*/
-    padding: 20px; /*espaciado interno en el contenido*/
-    background-color: #000000; /*fondo del contenido*/
-    border-radius: 8px; /*bordes redondeados en el contenido*/
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*sombra en el contenido*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
-img {
-    display: block;
-    margin: 0 auto 20px; /*centrar las imagenes*/
-    border-radius: 8px; /*bordes redondeados en las imagenes*/
-}   
-p {
-    line-height: 1.6; /*espaciado entre líneas en los parragos*/
-    color: #5a2388; /*color del texto de los parrafos y letras*/
-    text-align: center; /*centar Descubre el diseño deportivo.....*/ 
+
+.contenido-item {
+  background-color: #545050;
+  border: 1px solid #332e2e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 300px;
+  transition: transform 0.3s;
 }
-ul {
+
+.contenido-item:hover {
+  transform: scale(1.05);
+}
+
+.contenido-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* PROMO */
+.promo {
+  background: linear-gradient(90deg, #2f3337, #1a2854);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 600px;
+  animation: pulse 2s infinite alternate;
+}
+.promo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+/* FORMULARIO */
+.contacto form {
+  background-color: #231b1b;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #1a75ff;
+}
+
+.contacto .form-row {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+h1{
+    font-size:xx-large;
+
+}
+.contacto label {
+  display: block;
+  margin-bottom: 0.5rem; /* Espacio entre etiqueta y campo */
+  font-weight: bold; /* Negrita para las etiquetas */
+  color: #1a75ff; /* Color de las etiquetas */
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px; /* Bordes redondeados */
+  border: none;
+  background-color: #403a3a; /* Fondo de los campos */
+  color: white;
+}
+
+.contacto button {
+  background-color: #4a5b72; /* Botón de contacto */
+  color: rgb(228, 209, 209); /* Color del texto del botón */
+  padding: 0.8rem 1.5rem;/* Espaciado del botón */
+  border: none;/* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background 0.3s; 
+}
+
+.contacto button:hover {
+  background-color: #1c5ba2; /* Efecto hover del botón */
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #514e4e; /* Fondo de los derechos */
+  padding: 1rem; 
+  color: #777; /* Color del texto de los derechos */
+  margin-top: 3rem;/* Espacio entre el contenido y el footer */
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) { 
+  nav {
+    flex-direction: column; 
     text-align: center;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenido-item { /* Ajuste de ancho para pantallas pequeñas */
+    max-width: 90%;
+  }
+  
 }
-h4 {
-    text-align: center;
-    color: #82d0c6;
-    font-size: 1.9em;
-}
-a {
-    color: #904040; /*color de los enlaces*/
-    text-decoration: none; /*quitar subrayado en los enlaces*/
-    font-weight: bold; /*negrita en los enlaces*/
-    
-}
-a:hover {
-    text-decoration: underline; /*subrayar al pasar el mouse por encima de los enlaces*/
-    color: #454366; /*cambiar color al pasar el mouse por encima de los enlaces*/
-}
-
-
-
-
- 
-
-
-

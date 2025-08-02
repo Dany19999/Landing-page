@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>apple.com.pe</title> <!-- la url-->
-  <nav>
-      <ul>
-         <h1>APPLE </h1> 
-         <image src="imagen/a.gif" width="200" height="100"></image>
-        <li><a href="#intro">Inicio</a></li>
-        <li><a href="#contenido">Contenido</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
-  <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Perú - iPhone 15</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo-container">
+      <img src="imagen/a.gif" alt="Logo Apple" />
+      <h1>APPLE</h1>
+    </div>
+    <ul class="nav_links">
+      <li><a href="#intro">Inicio</a></li>
+      <li><a href="#contenido">Contenido</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CABECERA -->
   <header>
-   <img src="imagen/LK.gif" width="900" height="400" > <!--logo de la marca-->
-
-    <p>Bienvenido a nuestro sitio web oficial de Apple</p> <!--sub titulo-->
-    <p>Descubre las últimas novedades y productos de Apple.</p> <!--sub titulo-->
-
+    <img src="imagen/LK.gif" alt="Banner Apple" class="banner" />
+    <p>Bienvenido a nuestro sitio web oficial de Apple</p>
+    <p>Descubre las últimas novedades y productos de Apple.</p>
   </header>
 
-  <section class="intro">
-    <h2>TU IPHONE 15 A LA VUELTA DE LA ESQUINA</h2> <!--sub titulo-->
-    <p>   </p>
-  </section>
+  <main>
+    <!-- INTRO -->
+    <section id="intro" class="intro">
+      <h2>Tu iPhone 15 a la vuelta de la esquina</h2>
+    </section>
 
-  <section class="contenido">
+    <!-- CONTENIDO -->
+    <section id="contenido" class="contenido"> 
+      <div class="contenido-item">
+        <h2>Nuevo diseño</h2>
+        <img src="imagen/ms_gif_1.gif" alt="Diseño iPhone 15" />
+        <p>
+          El iPhone 15 Pro Max presenta un diseño completamente renovado con un enfoque en la innovación y los materiales premium. Su estructura está fabricada con titanio de grado aeroespacial, lo que lo hace más ligero y resistente que nunca.
+        </p>
+      </div>
 
-    <h2>NUEVO DISEÑO</h2>  
-    <h3> </h3> <!--sub titulo-->
-    <img src="imagen/ms_gif_1.gif" width="500" height="350">
-    <p>El iPhone 15 Pro Max presenta un diseño completamente renovado con un enfoque en la innovación y los materiales premium. Su estructura está fabricada con titanio de grado aeroespacial, lo que lo hace más ligero y resistente que nunca.</p>
+      <div class="contenido-item">
+        <h2>Entrada Tipo C</h2>
+        <img src="imagen/ca.gif" alt="Puerto USB-C" />
+        <p>
+          El iPhone 15 Pro Max ahora incluye puerto USB-C, lo que permite cargas más rápidas y eficientes, y mayor compatibilidad con otros dispositivos. Carga hasta un 50% en solo 30 minutos con un cargador de 20W o superior.
+        </p>
+      </div>
 
-    <h2>ENTRADA TIPO C</h2> <!--sub titulo-->
-    <img src="imagen/ca.gif"  width="450" height="300">
-    <p>El iPhone 15 Pro Max ahora incluye puerto USB-C, lo que permite cargas más rápidas y eficientes, y mayor compatibilidad con otros dispositivos. Carga hasta un 50% en solo 30 minutos con un cargador de 20W o superior.</p>
+      <div class="contenido-item">
+        <h2>Colores</h2>
+        <img src="imagen/ip.jpg" alt="Colores del iPhone" />
+        <p>
+          El iPhone 15 Pro Max está disponible en cuatro acabados de titanio elegantes y sofisticados: Titanio Natural, Azul Titán, Blanco Titán y Negro Titán.
+        </p>
+      </div>
+    </section>
+     
+    <section class="promo">
+      <h3>SOLO POR HOY !!!!!</h3>
+      <h2>Llevate unos airpods Pro de 2Da generacion totalmente gratis por la compra de tu primer iphone</h2>
+      <img src="imagen/ee.gif" width="350" height="200"
+    </section>
 
-    <h2>COLORES</h2> <!--sub titulo-->
-    <img src="imagen/ip.jpg"   width="450" height="250">
-    <p>El iPhone 15 Pro Max está disponible en cuatro acabados de titanio elegantes y sofisticados Titanio Natural Azul Titán Blanco Titán Negro Titán</p>
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="contacto">
+      <h2>Comunícate con nosotros</h2>
+      <form>
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form-row">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required />
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-    <h2>La visión de un diseñador sobre el diseño de Ford</h2>
-    <h3>Poder y estilo cautivadores: el Mustang® 2024</h3>
-    <p>El Mustang® 2024 es un ícono moderno con motor de alto desempeño, tecnología avanzada y diseño audaz.</p>
-  </section>
-  
-  <h3>SOLO POR HOY!!!!!!!!!</h3>
-  <h2>te hacemos un descuento del 6% en tu primer IPHONE</h2>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Apple Perú - Todos los derechos reservados.</p>
+  </footer>
 
-  
-    <h4>Comunícate con nosotros</h4>
-    <table>
-      <tr>
-        <th>Nombre</th>
-        <th>Correo electrónico</th>
-        <th>Mensaje</th>
-      </tr>
-      <tr>
-        <td><input type="text" name="nombre"></td> <!--campos -->
-        <td><input type="email" name="correo"></td>
-        <td><textarea name="mensaje" rows="3" cols="25"></textarea></td>
-      </tr>
-
-      <footer>
-        <p> derechos reservados</p>
-      </footer>
-    </table>
 </body>
+<script src="script.js"></script>
 </html>
