@@ -21,10 +21,10 @@ elementosAnimados.forEach(el => {
   observer.observe(el);
 });
 
-// Mostrar mensaje al enviar formulario
+// Mostrar mensaje al enviar formulario en el lading page
 const formulario = document.querySelector("form");
 formulario.addEventListener("submit", function(e) {
   e.preventDefault(); // evita que se recargue la página
-  alert("✅ ¡Mensaje enviado con éxito! Pronto nos comunicaremos contigo gracias por la preferencia.");
+  alert("¡Mensaje enviado con éxito! Pronto nos comunicaremos contigo gracias por la preferencia.");
   formulario.reset(); // limpia el formulario
 });

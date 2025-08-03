@@ -18,7 +18,7 @@ nav {
   display: flex;
   justify-content: space-between; /* Espacio entre logo y enlaces */
   align-items: center;  /* Alineación vertical */
-  background-color: #060606; /* Fondo de la barra de navegación */
+  background-color: #000000; /* Fondo de la barra de navegación */
   padding: 1rem 2rem; /* Espaciado interno */
   border-bottom: 2px solid #184c9b; /* Línea inferior azul */
   flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
@@ -84,6 +84,11 @@ h3 {
 h2 {
   color: #ffffff;
   margin-bottom: 2rem;
+}
+h4 {
+  color: #23477e;
+  margin-bottom: 1rem;
+  font-size: 24px;
 }
 
 .contenido {
